@@ -1,0 +1,133 @@
+.anime-card-wrapper {
+  display: grid;
+  grid-template-rows: 15% 15% 50% 20%;
+  background-color: rgba(47, 46, 59, 0.918);
+  width: 80vw;
+  height: 30em;
+  padding: 5.5em;
+  margin-top: 2em;
+  margin-inline: auto;
+  background-image: url(https://wallpapercave.com/wp/wp6087789.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  row-gap: 0.5em;
+}
+
+.anime-card-wrapper > div {
+  background-color: transparent;
+  z-index: 2;
+}
+
+.anime-card-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background: rgb(21, 21, 22);
+  background: linear-gradient(
+    90deg,
+    rgb(34, 33, 51) 0%,
+    rgba(34, 33, 51, 0.8) 44%,
+    rgba(34, 33, 51, 0.6) 63%,
+    rgba(34, 33, 51, 0.2) 100%
+  );
+  z-index: 1;
+}
+
+img {
+  width: 2em;
+}
+
+.anime-recommendation-text {
+  width: 57%;
+  margin-top: 4em;
+  font-size: 0.9em;
+  overflow-x: hidden;
+  display: flex;
+  text-align: left;
+  word-spacing: 6px;
+  line-height: 20px;
+  opacity: 0.8;
+}
+
+h1 {
+  font-size: 2.7em;
+}
+
+.search-wrapper {
+  margin-block: 3.5em;
+
+  display: flex;
+  align-items: center;
+}
+
+.search-wrapper button {
+  background-color: rgb(235, 100, 51);
+  padding: 1.2em 1em;
+  width: 4.5em;
+
+  border: none;
+  border-radius: 0.7em;
+  cursor: pointer;
+}
+
+.search-wrapper button img {
+  background-color: transparent;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+  width: 1.5em;
+}
+
+input {
+  background-color: aliceblue;
+  width: 54%;
+  height: 3.5em;
+  padding: 0.8em 1em;
+  margin-right: 1em;
+
+  border: none;
+  border-radius: 0.7em;
+
+  font-size: 1em;
+}
+
+input::placeholder {
+  margin-left: 1em;
+}
+
+h1,
+p {
+  background-color: transparent;
+}
+
+.watch-anime-btn-wrapper button {
+  background-color: rgb(240, 153, 121);
+  height: 3.3em;
+  width: 13em;
+  padding: 0.8em 1.3em;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-top: 1em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: none;
+  border-radius: 0.7em;
+  color: black;
+
+  cursor: pointer;
+}
+
+.watch-anime-btn-wrapper button img {
+  background-color: transparent;
+  width: 1.4em;
+}

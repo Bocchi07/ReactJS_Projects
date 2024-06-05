@@ -1,0 +1,23 @@
+header {
+  width: 70%;
+  margin-inline: auto;
+  height: 100px;
+  padding-top: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+header > ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  font-size: 1em;
+}
+
+.nav-form-list {
+  width: 7em;
+  font-size: 1em;
+  font-weight: 600;
+}
